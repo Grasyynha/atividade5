@@ -1,4 +1,4 @@
-<h2>Atividade 5</h2>h2>
+<h2>Atividade 5</h2>
 
 O objetivo desta atividade é avaliar seus conhecimentos do framework Cypress e como realizar testes e2e
 automatizados em uma aplicação Web.
