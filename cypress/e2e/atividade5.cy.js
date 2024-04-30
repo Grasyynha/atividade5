@@ -22,4 +22,19 @@ describe('Cadastro de Usuários', function() {
           
         });
     });
+describe('Formato email inválido', () => {
+    it('Deve mostrar erro para e-mails em formato inválido', () => {
+          cy.visit('https://rarocrud-frontend-88984f6e4454.herokuapp.com/users/novo');
+          cy.get('input[name="email"]')
+          .type('invalid-email');
+    
+       
+          cy.get('button[type="submit"]').click();
+    
+       
+          cy.get('.sc-cPiKLX.feFrSQ') 
+          .should('be.visible')
+          .and('contain.text', 'Formato de e-mail inválido'); 
+      });
+    });
 })
