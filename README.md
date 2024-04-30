@@ -2,10 +2,15 @@
 
 O objetivo desta atividade é avaliar seus conhecimentos do framework Cypress e como realizar testes e2e
 automatizados em uma aplicação Web.
+
+<br>
+
 Enunciado
 Leia a especificação da API CRUD e, em seguida, siga as orientações para a entrega da atividade.
+<br>
 C.R.U.D API
 C.R.U.D Frontend
+
 1. Crie um repositório público no Github chamado atividade5-academy-SEUNOME-SEUSOBRENOME;
 2. Inicie um novo projeto Cypress e configure de forma que aponte para o repositório criado
 anteriormente;
