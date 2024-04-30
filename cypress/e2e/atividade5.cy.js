@@ -52,7 +52,7 @@ describe('Email Duplicado', () => {
           cy.visit('https://rarocrud-frontend-88984f6e4454.herokuapp.com/users');
           cy.get('.sc-gsFSXq.mUpIH').type("Grasiela Texeira")
           cy.get('.sc-hzhJZQ.cShbuI').click()
-          cy.get('input[name="id"]').should('have.value', 'eadab72e-a1d2-4413-9974-e59ba56739ba')
+          cy.get('input[name="id"]').should('have.value', 'b858e247-8cf3-4798-806e-602e866d7cdc')
           cy.get('input[name="name"]').should('have.value', 'Grasiela Texeira')
           cy.get('input[name="email"]').should('have.value', 'grasy.mst@gmail.com')
           
@@ -62,7 +62,7 @@ describe('Email Duplicado', () => {
 })
 
 describe('Encontrar um usuario', () => {
-    const id = 'eadab72e-a1d2-4413-9974-e59ba56739ba'
+    const id = 'b858e247-8cf3-4798-806e-602e866d7cdc'
     it('O usuário deve ser localizado através de seu identificador único', () => {
         cy.request({
             method: 'GET',
@@ -74,7 +74,7 @@ describe('Encontrar um usuario', () => {
             expect(response.status).to.eq(200)
             const listedUser = response.body;
             console.log(response.body)
-            expect(listedUser.id).to.eq('eadab72e-a1d2-4413-9974-e59ba56739ba')
+            expect(listedUser.id).to.eq('b858e247-8cf3-4798-806e-602e866d7cdc')
             expect(listedUser.name).to.eq('Grasiela Texeira')
 
         })
